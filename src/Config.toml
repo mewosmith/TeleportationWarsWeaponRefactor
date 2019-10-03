@@ -1,17 +1,98 @@
+# YOU MUST HAVE AND ABUNDANCE OF NAMES RELATIVE TO WEAPONCOUNT/ WEAPONTYPES OR YOU WILL GET INDEX OUT OF BOUNDS
+
+
 [config]
 out_path = "C:/Users/alby/Desktop/tpwar_targets/tpwar_ship_target/"
-mod_name = "Extensions\\Rust Output\\macros"
+mod_name = "extensions\\mysupersickmopd\\macros\\"
 pageid = "344525253"
-weaponcount = 20
-weapontypes = ["sgun", "mgun", "lgun", "xlgun", "mturret", "lturret", "xlturret", "smiss", "mmiss","lmiss","xlmiss"]
-prodwares = [ "advancedcomposites","advancedelectronics","antimattercells","antimatterconverters","claytronics","dronecomponents","energycells","engineparts","fieldcoils","graphene","hullparts","microchips","missilecomponents","plasmaconductors","quantumtubes","scanningarrays","shieldcomponents","siliconwafers","smartchips","superfluidcoolant","turretcomponents","weaponcomponents"]
-owner = ["argon", "antigone", "agi", "goner", "wholefood", "ledda", "aldrin", "cantera", "toride", "jonferson", "plutarch", "terracorp", "beryll", "fred", "terrapmc", "otas", "terrans","yaki","usc","heartofalbion","sonraenergy","teladi", "ministry", "telunion","nmmc", "atreus", "ptni", "franton", "chow", "uguras" ,"paranid", "holyorder", "buccaneers","heretics","xenon", "xenonmatrix","khaak", "khaakpox","scaleplate", "hatikvah", "atlas", "sovsyn" , "cartel", "strongarms", "plutarch","terracorp", "beryll", "terrapmc", "reivers", "nolimits", "uguras","yaki"]
+weaponcount = 2
+weapontypes = [  
+                "sgun",
+                "mgun",
+                "lgun",
+                "mturret",
+                "lturret",
+                ]
+prodwares = [ 
+                "advancedcomposites",
+                "advancedelectronics",
+                "antimattercells",
+                "antimatterconverters",
+                "claytronics",
+                "dronecomponents",
+                "energycells",
+                "engineparts",
+                "fieldcoils",
+                "graphene",
+                "hullparts",
+                "microchips",
+                "missilecomponents",
+                "plasmaconductors",
+                "quantumtubes",
+                "scanningarrays",
+                "shieldcomponents",
+                "siliconwafers",
+                "smartchips",
+                "superfluidcoolant",
+                "turretcomponents",
+                "weaponcomponents"
+                ]
+owner = [
+        "argon",
+        "antigone",
+        "agi",
+        "goner",
+        "wholefood",
+        "ledda",
+        "aldrin",
+        "cantera",
+        "toride",
+        "jonferson",
+        "plutarch",
+        "terracorp",
+        "beryll",
+        "fred",
+        "terrapmc",
+        "otas",
+        "terrans",
+        "yaki",
+        "usc",
+        "heartofalbion",
+        "sonraenergy",
+        "teladi",
+        "ministry",
+        "telunion",
+        "nmmc",
+        "atreus",
+        "ptni",
+        "franton",
+        "chow",
+        "uguras" ,
+        "paranid",
+        "holyorder",
+        "buccaneers",
+        "heretics",
+        "xenon",
+        "xenonmatrix",
+        "khaak",
+        "khaakpox",
+        "scaleplate",
+        "hatikvah",
+        "atlas",
+        "sovsyn" ,
+        "cartel",
+        "strongarms",
+        "plutarch",
+        "terracorp",
+        "beryll",
+        "terrapmc",
+        "reivers",
+        "nolimits",
+        "uguras",
+        "yaki"
+        ]
 
-#group missiles
-#turrets
-#weapons
-[l_weapon]
-
+[s_weapon]
 name_pool = ["pasta","sauce"]
 macroname = ["pasta","sauce"]
 group = "weapons"
@@ -24,19 +105,870 @@ prodamt2 = [10, 100]
 prodamt3 = [10, 100]
 license = ["generaluseequipment,militaryequipment"]
 class = "weapon"
-wcomponents = ["weapon_arg_l_destroyer_01_mk1","weapon_par_l_destroyer_01_mk1","weapon_tel_l_destroyer_01_mk1","weapon_arg_l_plasma_01_mk1","weapon_par_l_railgun_01_mk1","weapon_tel_l_beam_01_mk1","weapon_gen_l_laser_01_mk1"]
 rotationspeed = [5, 60]
 rotationacceleration = [1, 15]
 hullmax = [1000, 15000]
-#bullet
 scale = [1,0]
-bcomponent_laser = ["bullet_gen_l_laser_01_mk1", "bullet_xen_l_laser_01_mk1", "bullet_gen_m_beam_01_mk1","bullet_gen_m_beam_01_mk2","bullet_gen_m_beam_01_mk1","bullet_kha_m_beam_01","bullet_gen_m_beam_01_mk1",]
-bcomponent_proj = ["bullet_arg_m_ion_01_mk1","bullet_arg_m_ion_01_mk2","bullet_gen_m_gatling_01_mk1","bullet_gen_m_gatling_01_mk2","bullet_gen_m_laser_01_mk1","bullet_gen_m_laser_01_mk2","bullet_gen_m_plasma_01_mk1","bullet_gen_m_plasma_01_mk2","bullet_gen_m_shotgun_01_mk1","bullet_gen_m_shotgun_01_mk2","bullet_gen_m_gatling_01_mk1","bullet_gen_m_laser_01_mk1","bullet_gen_m_plasma_01_mk1","bullet_gen_m_shotgun_01_mk1","bullet_par_m_railgun_01_mk1","bullet_par_m_railgun_01_mk2","bullet_tel_m_charge_01_mk1","bullet_tel_m_charge_01_mk2","bullet_xen_m_laser_01_mk1","bullet_xen_m_laser_01_mk1",]
 speed = [800, 3000]
 reload = [10, 50]
 dmin = [2000, 3000]
 dmax = [3000, 5000]
 dval = [5000, 8000]
 lifetime = [5, 15]
-impact = ["impact_arg_m_ion_01_mk1","impact_arg_m_ion_01_mk1","impact_arg_s_ion_01_mk1","impact_arg_s_ion_01_mk1","impact_gen_l_laser_01_mk1","impact_gen_m_beam_01_mk1","impact_gen_m_beam_01_mk1","impact_gen_m_gatling_01_mk1","impact_gen_m_gatling_01_mk1","impact_gen_m_laser_01_mk1","impact_gen_m_laser_01_mk1","impact_gen_m_plasma_01_mk1","impact_gen_m_plasma_01_mk1","impact_gen_m_shotgun_01_mk1","impact_gen_m_shotgun_01_mk1","impact_gen_s_beam_01_mk1","impact_gen_s_beam_01_mk1","impact_gen_s_gatling_01_mk1","impact_gen_s_gatling_01_mk1","impact_gen_s_laser_01_mk1","impact_gen_s_laser_01_mk1","impact_gen_s_plasma_01_mk1","impact_gen_s_plasma_01_mk1","impact_gen_s_shotgun_01_mk1","impact_gen_s_shotgun_01_mk1","impact_gen_m_beam_01_mk1","impact_gen_m_gatling_01_mk1","impact_gen_m_laser_01_mk1","impact_gen_m_plasma_01_mk1","impact_gen_m_shotgun_01_mk1","impact_gen_m_beam_01_mk1","impact_gen_s_gatling_01_mk1","impact_gen_s_laser_01_mk1","impact_gen_s_plasma_01_mk1","impact_gen_s_shotgun_01_mk1","impact_gen_m_beam_01_mk1","impact_gen_s_beam_01_mk1","impact_par_m_railgun_01_mk1","impact_par_m_railgun_01_mk1","impact_par_s_railgun_01_mk1","impact_par_s_railgun_01_mk1","impact_gen_spacesuit_laser_01_mk1","impact_spacesuit_repair_01_mk1","impact_tel_m_charge_01_mk1","impact_tel_m_charge_01_mk1","impact_tel_s_charge_01_mk1","impact_tel_s_charge_01_mk1","impact_xen_m_laser_01_mk1","impact_xen_m_laser_01_mk1","impact_xen_s_laser_01_mk1","impact_xen_m_laser_01_mk1","impact_xen_s_laser_01_mk1",]
-launch = [ "muzzle_arg_m_ion_01_mk1","muzzle_arg_m_ion_01_mk1","muzzle_arg_s_ion_01_mk1","muzzle_arg_s_ion_01_mk1","muzzle_gen_l_laser_01_mk1","muzzle_gen_m_beam_01_mk1","muzzle_gen_m_beam_01_mk1","muzzle_gen_m_gatling_01_mk1","muzzle_gen_m_gatling_01_mk1","muzzle_gen_m_laser_01_mk1","muzzle_gen_m_laser_01_mk1","muzzle_gen_m_plasma_01_mk1","muzzle_gen_m_plasma_01_mk1","muzzle_gen_m_shotgun_01_mk1","muzzle_gen_m_shotgun_01_mk1","muzzle_gen_s_beam_01_mk1","muzzle_gen_s_beam_01_mk1","muzzle_gen_s_gatling_01_mk1","muzzle_gen_s_gatling_01_mk1","muzzle_gen_s_laser_01_mk1","muzzle_gen_s_laser_01_mk1","muzzle_gen_s_plasma_01_mk1","muzzle_gen_s_plasma_01_mk1","muzzle_gen_s_shotgun_01_mk1","muzzle_gen_s_shotgun_01_mk1","muzzle_gen_l_beam_01_mk1","muzzle_gen_m_gatling_01_mk1","muzzle_gen_m_laser_01_mk1","muzzle_gen_m_plasma_01_mk1","muzzle_gen_m_shotgun_01_mk1","muzzle_gen_m_beam_01_mk1","muzzle_gen_s_gatling_01_mk1","muzzle_gen_s_laser_01_mk1","muzzle_gen_s_plasma_01_mk1","muzzle_gen_s_shotgun_01_mk1","muzzle_gen_m_beam_01_mk1","muzzle_gen_s_beam_01_mk1","muzzle_par_m_railgun_01_mk1","muzzle_par_m_railgun_01_mk1","muzzle_par_s_railgun_01_mk1","muzzle_par_s_railgun_01_mk1","muzzle_gen_spacesuit_laser_01_mk1","muzzle_gen_s_repair_01_mk1","muzzle_tel_m_charge_01_mk1","muzzle_tel_m_charge_01_mk1","muzzle_tel_s_charge_01_mk1","muzzle_tel_s_charge_01_mk1","muzzle_xen_m_laser_01_mk1","muzzle_xen_m_laser_01_mk1","muzzle_xen_s_laser_01_mk1","muzzle_xen_m_laser_01_mk1","muzzle_xen_s_laser_01_mk1","wpn_flare_launcher",]
+bcomponent_laser = [ 
+                    "bullet_gen_s_beam_01_mk1",
+                    "bullet_gen_s_beam_01_mk2",
+                    "bullet_gen_s_beam_01_mk1",
+                    "bullet_kha_s_beam_01",
+                    ]
+bcomponent_proj = [ 
+                    "weapon_arg_s_ion_01_mk1",
+                    "weapon_arg_s_ion_01_mk2",
+                    "weapon_gen_s_beam_01_mk1",
+                    "weapon_gen_s_beam_01_mk2",
+                    "weapon_gen_s_gatling_01_mk1",
+                    "weapon_gen_s_gatling_01_mk2",
+                    "weapon_gen_s_plasma_01_mk1",
+                    "weapon_gen_s_plasma_01_mk2",
+                    "weapon_par_s_railgun_01_mk1",
+                    "weapon_par_s_railgun_01_mk2",
+                    "weapon_tel_s_charge_01_mk1",
+                    "weapon_tel_s_charge_01_mk2",
+                    "weapon_gen_s_laser_01_mk1",
+                    "weapon_gen_s_laser_01_mk2",
+                    "weapon_gen_s_shotgun_01_mk1",
+                    "weapon_gen_s_shotgun_01_mk2",
+                    "weapon_kha_s_laser_01_mk1",
+                    "weapon_xen_s_laser_01_mk1",
+                    ]
+wcomponents = [
+               "weapon_arg_s_ion_01_mk1",
+               "weapon_arg_s_ion_01_mk2",
+               "weapon_gen_s_beam_01_mk1",
+               "weapon_gen_s_beam_01_mk2",
+               "weapon_gen_s_gatling_01_mk1",
+               "weapon_gen_s_gatling_01_mk2",
+               "weapon_gen_s_plasma_01_mk1",
+               "weapon_gen_s_plasma_01_mk2",
+               "weapon_par_s_railgun_01_mk1",
+               "weapon_par_s_railgun_01_mk2",
+               "weapon_tel_s_charge_01_mk1",
+               "weapon_tel_s_charge_01_mk2",
+               "weapon_gen_s_laser_01_mk1",
+               "weapon_gen_s_laser_01_mk2",
+               "weapon_gen_s_shotgun_01_mk1",
+               "weapon_gen_s_shotgun_01_mk2",
+               "weapon_kha_s_laser_01_mk1",
+               "weapon_xen_s_laser_01_mk1",
+                ]
+
+impact = [
+        "impact_arg_m_ion_01_mk1",
+        "impact_arg_m_ion_01_mk1",
+        "impact_arg_s_ion_01_mk1",
+        "impact_arg_s_ion_01_mk1",
+        "impact_gen_l_laser_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_s_beam_01_mk1",
+        "impact_gen_s_beam_01_mk1",
+        "impact_gen_s_gatling_01_mk1",
+        "impact_gen_s_gatling_01_mk1",
+        "impact_gen_s_laser_01_mk1",
+        "impact_gen_s_laser_01_mk1",
+        "impact_gen_s_plasma_01_mk1",
+        "impact_gen_s_plasma_01_mk1",
+        "impact_gen_s_shotgun_01_mk1",
+        "impact_gen_s_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_s_gatling_01_mk1",
+        "impact_gen_s_laser_01_mk1",
+        "impact_gen_s_plasma_01_mk1",
+        "impact_gen_s_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_s_beam_01_mk1",
+        "impact_par_m_railgun_01_mk1",
+        "impact_par_m_railgun_01_mk1",
+        "impact_par_s_railgun_01_mk1",
+        "impact_par_s_railgun_01_mk1",
+        "impact_gen_spacesuit_laser_01_mk1",
+        "impact_spacesuit_repair_01_mk1",
+        "impact_tel_m_charge_01_mk1",
+        "impact_tel_m_charge_01_mk1",
+        "impact_tel_s_charge_01_mk1",
+        "impact_tel_s_charge_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_s_laser_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_s_laser_01_mk1",
+        ]
+launch = [ 
+        "muzzle_arg_m_ion_01_mk1",
+        "muzzle_arg_m_ion_01_mk1",
+        "muzzle_arg_s_ion_01_mk1",
+        "muzzle_arg_s_ion_01_mk1",
+        "muzzle_gen_l_laser_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_s_beam_01_mk1",
+        "muzzle_gen_s_beam_01_mk1",
+        "muzzle_gen_s_gatling_01_mk1",
+        "muzzle_gen_s_gatling_01_mk1",
+        "muzzle_gen_s_laser_01_mk1",
+        "muzzle_gen_s_laser_01_mk1",
+        "muzzle_gen_s_plasma_01_mk1",
+        "muzzle_gen_s_plasma_01_mk1",
+        "muzzle_gen_s_shotgun_01_mk1",
+        "muzzle_gen_s_shotgun_01_mk1",
+        "muzzle_gen_l_beam_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_s_gatling_01_mk1",
+        "muzzle_gen_s_laser_01_mk1",
+        "muzzle_gen_s_plasma_01_mk1",
+        "muzzle_gen_s_shotgun_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_s_beam_01_mk1",
+        "muzzle_par_m_railgun_01_mk1",
+        "muzzle_par_m_railgun_01_mk1",
+        "muzzle_par_s_railgun_01_mk1",
+        "muzzle_par_s_railgun_01_mk1",
+        "muzzle_gen_spacesuit_laser_01_mk1",
+        "muzzle_gen_s_repair_01_mk1",
+        "muzzle_tel_m_charge_01_mk1",
+        "muzzle_tel_m_charge_01_mk1",
+        "muzzle_tel_s_charge_01_mk1",
+        "muzzle_tel_s_charge_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_s_laser_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_s_laser_01_mk1",
+        "wpn_flare_launcher",
+        ]
+
+[m_weapon]
+name_pool = ["pasta","sauce"]
+macroname = ["pasta","sauce"]
+group = "weapons"
+tags ="equipment weapon"
+minprice = [400000, 700000]
+avgprice = [700000, 900000]
+maxprice = [900000, 1200000]
+prodamt1 = [10, 100]
+prodamt2 = [10, 100]
+prodamt3 = [10, 100]
+license = ["generaluseequipment,militaryequipment"]
+class = "weapon"
+rotationspeed = [5, 60]
+rotationacceleration = [1, 15]
+hullmax = [1000, 15000]
+scale = [1,0]
+speed = [800, 3000]
+reload = [10, 50]
+dmin = [2000, 3000]
+dmax = [3000, 5000]
+dval = [5000, 8000]
+lifetime = [5, 15]
+bcomponent_laser = [ 
+                    "bullet_gen_m_beam_01_mk1",
+                    "bullet_gen_m_beam_01_mk2",
+                    "bullet_gen_m_beam_01_mk1",
+                    "bullet_kha_m_beam_01",
+                    "bullet_gen_m_beam_01_mk1",
+                    ]
+bcomponent_proj = [ 
+                    "bullet_arg_m_ion_01_mk1",
+                    "bullet_arg_m_ion_01_mk2",
+                    "bullet_gen_m_gatling_01_mk1",
+                    "bullet_gen_m_gatling_01_mk2",
+                    "bullet_gen_m_laser_01_mk1",
+                    "bullet_gen_m_laser_01_mk2",
+                    "bullet_gen_m_plasma_01_mk1",
+                    "bullet_gen_m_plasma_01_mk2",
+                    "bullet_gen_m_shotgun_01_mk1",
+                    "bullet_gen_m_shotgun_01_mk2",
+                    "bullet_gen_m_gatling_01_mk1",
+                    "bullet_gen_m_laser_01_mk1",
+                    "bullet_gen_m_plasma_01_mk1",
+                    "bullet_gen_m_shotgun_01_mk1",
+                    "bullet_par_m_railgun_01_mk1",
+                    "bullet_par_m_railgun_01_mk2",
+                    "bullet_tel_m_charge_01_mk1",
+                    "bullet_tel_m_charge_01_mk2",
+                    "bullet_xen_m_laser_01_mk1",
+                    "bullet_xen_m_laser_01_mk1",
+                    ]
+wcomponents = [
+                "weapon_arg_m_ion_01_mk1",
+                "weapon_arg_m_ion_01_mk2",
+                "weapon_gen_m_beam_01_mk1",
+                "weapon_gen_m_beam_01_mk2",
+                "weapon_gen_m_gatling_01_mk1",
+                "weapon_gen_m_gatling_01_mk2",
+                "weapon_gen_m_plasma_01_mk1",
+                "weapon_gen_m_plasma_01_mk2",
+                "weapon_par_m_railgun_01_mk1",
+                "weapon_par_m_railgun_01_mk2",
+                "weapon_tel_m_charge_01_mk1",
+                "weapon_tel_m_charge_01_mk2",
+                "weapon_gen_m_laser_01_mk1",
+                "weapon_gen_m_laser_01_mk2",
+                "weapon_gen_m_shotgun_01_mk1",
+                "weapon_gen_m_shotgun_01_mk2",
+                "weapon_kha_m_laser_01_mk1",
+                "weapon_xen_m_laser_01_mk1",
+                ]
+
+impact = [
+        "impact_arg_m_ion_01_mk1",
+        "impact_arg_m_ion_01_mk1",
+        "impact_arg_s_ion_01_mk1",
+        "impact_arg_s_ion_01_mk1",
+        "impact_gen_l_laser_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_s_beam_01_mk1",
+        "impact_gen_s_beam_01_mk1",
+        "impact_gen_s_gatling_01_mk1",
+        "impact_gen_s_gatling_01_mk1",
+        "impact_gen_s_laser_01_mk1",
+        "impact_gen_s_laser_01_mk1",
+        "impact_gen_s_plasma_01_mk1",
+        "impact_gen_s_plasma_01_mk1",
+        "impact_gen_s_shotgun_01_mk1",
+        "impact_gen_s_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_s_gatling_01_mk1",
+        "impact_gen_s_laser_01_mk1",
+        "impact_gen_s_plasma_01_mk1",
+        "impact_gen_s_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_s_beam_01_mk1",
+        "impact_par_m_railgun_01_mk1",
+        "impact_par_m_railgun_01_mk1",
+        "impact_par_s_railgun_01_mk1",
+        "impact_par_s_railgun_01_mk1",
+        "impact_gen_spacesuit_laser_01_mk1",
+        "impact_spacesuit_repair_01_mk1",
+        "impact_tel_m_charge_01_mk1",
+        "impact_tel_m_charge_01_mk1",
+        "impact_tel_s_charge_01_mk1",
+        "impact_tel_s_charge_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_s_laser_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_s_laser_01_mk1",
+        ]
+launch = [ 
+        "muzzle_arg_m_ion_01_mk1",
+        "muzzle_arg_m_ion_01_mk1",
+        "muzzle_arg_s_ion_01_mk1",
+        "muzzle_arg_s_ion_01_mk1",
+        "muzzle_gen_l_laser_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_s_beam_01_mk1",
+        "muzzle_gen_s_beam_01_mk1",
+        "muzzle_gen_s_gatling_01_mk1",
+        "muzzle_gen_s_gatling_01_mk1",
+        "muzzle_gen_s_laser_01_mk1",
+        "muzzle_gen_s_laser_01_mk1",
+        "muzzle_gen_s_plasma_01_mk1",
+        "muzzle_gen_s_plasma_01_mk1",
+        "muzzle_gen_s_shotgun_01_mk1",
+        "muzzle_gen_s_shotgun_01_mk1",
+        "muzzle_gen_l_beam_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_s_gatling_01_mk1",
+        "muzzle_gen_s_laser_01_mk1",
+        "muzzle_gen_s_plasma_01_mk1",
+        "muzzle_gen_s_shotgun_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_s_beam_01_mk1",
+        "muzzle_par_m_railgun_01_mk1",
+        "muzzle_par_m_railgun_01_mk1",
+        "muzzle_par_s_railgun_01_mk1",
+        "muzzle_par_s_railgun_01_mk1",
+        "muzzle_gen_spacesuit_laser_01_mk1",
+        "muzzle_gen_s_repair_01_mk1",
+        "muzzle_tel_m_charge_01_mk1",
+        "muzzle_tel_m_charge_01_mk1",
+        "muzzle_tel_s_charge_01_mk1",
+        "muzzle_tel_s_charge_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_s_laser_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_s_laser_01_mk1",
+        "wpn_flare_launcher",
+        ]
+
+[l_weapon]
+name_pool = ["pasta","sauce"]
+macroname = ["pasta","sauce"]
+group = "weapons"
+tags ="equipment weapon"
+minprice = [400000, 700000]
+avgprice = [700000, 900000]
+maxprice = [900000, 1200000]
+prodamt1 = [10, 100]
+prodamt2 = [10, 100]
+prodamt3 = [10, 100]
+license = ["generaluseequipment,militaryequipment"]
+class = "weapon"
+rotationspeed = [5, 60]
+rotationacceleration = [1, 15]
+hullmax = [1000, 15000]
+scale = [1,0]
+speed = [800, 3000]
+reload = [10, 50]
+dmin = [2000, 3000]
+dmax = [3000, 5000]
+dval = [5000, 8000]
+lifetime = [5, 15]
+bcomponent_laser = [ 
+                    "bullet_gen_l_laser_01_mk1", 
+                    "bullet_xen_l_laser_01_mk1"
+                    ]
+bcomponent_proj = [ 
+                    "bullet_arg_m_ion_01_mk1",
+                    "bullet_arg_m_ion_01_mk2",
+                    "bullet_gen_m_gatling_01_mk1",
+                    "bullet_gen_m_gatling_01_mk2",
+                    "bullet_gen_m_laser_01_mk1",
+                    "bullet_gen_m_laser_01_mk2",
+                    "bullet_gen_m_plasma_01_mk1",
+                    "bullet_gen_m_plasma_01_mk2",
+                    "bullet_gen_m_shotgun_01_mk1",
+                    "bullet_gen_m_shotgun_01_mk2",
+                    "bullet_gen_m_gatling_01_mk1",
+                    "bullet_gen_m_laser_01_mk1",
+                    "bullet_gen_m_plasma_01_mk1",
+                    "bullet_gen_m_shotgun_01_mk1",
+                    "bullet_par_m_railgun_01_mk1",
+                    "bullet_par_m_railgun_01_mk2",
+                    "bullet_tel_m_charge_01_mk1",
+                    "bullet_tel_m_charge_01_mk2",
+                    "bullet_xen_m_laser_01_mk1",
+                    "bullet_xen_m_laser_01_mk1",
+                    
+                    ]
+wcomponents = [
+                "weapon_arg_l_destroyer_01_mk1",
+                "weapon_par_l_destroyer_01_mk1",
+                "weapon_tel_l_destroyer_01_mk1",
+                "weapon_arg_l_plasma_01_mk1",
+                "weapon_par_l_railgun_01_mk1",
+                "weapon_tel_l_beam_01_mk1",
+                "weapon_gen_l_laser_01_mk1",
+                ]
+
+impact = [
+        "impact_arg_m_ion_01_mk1",
+        "impact_arg_m_ion_01_mk1",
+        "impact_arg_s_ion_01_mk1",
+        "impact_arg_s_ion_01_mk1",
+        "impact_gen_l_laser_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_s_beam_01_mk1",
+        "impact_gen_s_beam_01_mk1",
+        "impact_gen_s_gatling_01_mk1",
+        "impact_gen_s_gatling_01_mk1",
+        "impact_gen_s_laser_01_mk1",
+        "impact_gen_s_laser_01_mk1",
+        "impact_gen_s_plasma_01_mk1",
+        "impact_gen_s_plasma_01_mk1",
+        "impact_gen_s_shotgun_01_mk1",
+        "impact_gen_s_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_s_gatling_01_mk1",
+        "impact_gen_s_laser_01_mk1",
+        "impact_gen_s_plasma_01_mk1",
+        "impact_gen_s_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_s_beam_01_mk1",
+        "impact_par_m_railgun_01_mk1",
+        "impact_par_m_railgun_01_mk1",
+        "impact_par_s_railgun_01_mk1",
+        "impact_par_s_railgun_01_mk1",
+        "impact_gen_spacesuit_laser_01_mk1",
+        "impact_spacesuit_repair_01_mk1",
+        "impact_tel_m_charge_01_mk1",
+        "impact_tel_m_charge_01_mk1",
+        "impact_tel_s_charge_01_mk1",
+        "impact_tel_s_charge_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_s_laser_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_s_laser_01_mk1",
+        ]
+launch = [ 
+        "muzzle_arg_m_ion_01_mk1",
+        "muzzle_arg_m_ion_01_mk1",
+        "muzzle_arg_s_ion_01_mk1",
+        "muzzle_arg_s_ion_01_mk1",
+        "muzzle_gen_l_laser_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_s_beam_01_mk1",
+        "muzzle_gen_s_beam_01_mk1",
+        "muzzle_gen_s_gatling_01_mk1",
+        "muzzle_gen_s_gatling_01_mk1",
+        "muzzle_gen_s_laser_01_mk1",
+        "muzzle_gen_s_laser_01_mk1",
+        "muzzle_gen_s_plasma_01_mk1",
+        "muzzle_gen_s_plasma_01_mk1",
+        "muzzle_gen_s_shotgun_01_mk1",
+        "muzzle_gen_s_shotgun_01_mk1",
+        "muzzle_gen_l_beam_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_s_gatling_01_mk1",
+        "muzzle_gen_s_laser_01_mk1",
+        "muzzle_gen_s_plasma_01_mk1",
+        "muzzle_gen_s_shotgun_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_s_beam_01_mk1",
+        "muzzle_par_m_railgun_01_mk1",
+        "muzzle_par_m_railgun_01_mk1",
+        "muzzle_par_s_railgun_01_mk1",
+        "muzzle_par_s_railgun_01_mk1",
+        "muzzle_gen_spacesuit_laser_01_mk1",
+        "muzzle_gen_s_repair_01_mk1",
+        "muzzle_tel_m_charge_01_mk1",
+        "muzzle_tel_m_charge_01_mk1",
+        "muzzle_tel_s_charge_01_mk1",
+        "muzzle_tel_s_charge_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_s_laser_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_s_laser_01_mk1",
+        "wpn_flare_launcher",
+        ]
+
+[m_turret]
+
+name_pool = ["pasta","sauce"]
+macroname = ["pasta","sauce"]
+group = "turrets"
+tags ="equipment turret"
+minprice = [400000, 700000]
+avgprice = [700000, 900000]
+maxprice = [900000, 1200000]
+prodamt1 = [10, 100]
+prodamt2 = [10, 100]
+prodamt3 = [10, 100]
+license = ["generaluseequipment,militaryequipment"]
+class = "turret"
+rotationspeed = [5, 60]
+rotationacceleration = [1, 15]
+hullmax = [1000, 15000]
+scale = [1,0]
+speed = [800, 3000]
+reload = [10, 50]
+dmin = [2000, 3000]
+dmax = [3000, 5000]
+dval = [5000, 8000]
+lifetime = [5, 15]
+bcomponent_laser = [ 
+                    "bullet_gen_s_beam_01_mk1",
+                    "bullet_gen_s_beam_01_mk2",
+                    "bullet_gen_s_beam_01_mk1",
+                    "bullet_kha_s_beam_01",
+                    "bullet_gen_m_beam_01_mk1",
+                    "bullet_gen_m_beam_01_mk2",
+                    "bullet_gen_m_beam_01_mk1",
+                    "bullet_kha_m_beam_01",
+                    "bullet_gen_m_beam_01_mk1",
+                    ]
+bcomponent_proj = [ 
+                    "weapon_arg_s_ion_01_mk1",
+                    "weapon_arg_s_ion_01_mk2",
+                    "weapon_gen_s_beam_01_mk1",
+                    "weapon_gen_s_beam_01_mk2",
+                    "weapon_gen_s_gatling_01_mk1",
+                    "weapon_gen_s_gatling_01_mk2",
+                    "weapon_gen_s_plasma_01_mk1",
+                    "weapon_gen_s_plasma_01_mk2",
+                    "weapon_par_s_railgun_01_mk1",
+                    "weapon_par_s_railgun_01_mk2",
+                    "weapon_tel_s_charge_01_mk1",
+                    "weapon_tel_s_charge_01_mk2",
+                    "weapon_gen_s_laser_01_mk1",
+                    "weapon_gen_s_laser_01_mk2",
+                    "weapon_gen_s_shotgun_01_mk1",
+                    "weapon_gen_s_shotgun_01_mk2",
+                    "weapon_kha_s_laser_01_mk1",
+                    "weapon_xen_s_laser_01_mk1",
+                    "bullet_arg_m_ion_01_mk1",
+                    "bullet_arg_m_ion_01_mk2",
+                    "bullet_gen_m_gatling_01_mk1",
+                    "bullet_gen_m_gatling_01_mk2",
+                    "bullet_gen_m_laser_01_mk1",
+                    "bullet_gen_m_laser_01_mk2",
+                    "bullet_gen_m_plasma_01_mk1",
+                    "bullet_gen_m_plasma_01_mk2",
+                    "bullet_gen_m_shotgun_01_mk1",
+                    "bullet_gen_m_shotgun_01_mk2",
+                    "bullet_gen_m_gatling_01_mk1",
+                    "bullet_gen_m_laser_01_mk1",
+                    "bullet_gen_m_plasma_01_mk1",
+                    "bullet_gen_m_shotgun_01_mk1",
+                    "bullet_par_m_railgun_01_mk1",
+                    "bullet_par_m_railgun_01_mk2",
+                    "bullet_tel_m_charge_01_mk1",
+                    "bullet_tel_m_charge_01_mk2",
+                    "bullet_xen_m_laser_01_mk1",
+                    "bullet_xen_m_laser_01_mk1",
+                    ]
+wcomponents = [
+                "turret_arg_m_beam_01_mk1",
+                "turret_arg_m_beam_02_mk1",
+                "turret_par_m_beam_01_mk1",
+                "turret_par_m_beam_02_mk1",
+                "turret_tel_m_beam_01_mk1",
+                "turret_tel_m_beam_02_mk1",
+                "turret_arg_m_gatling_01_mk1",
+                "turret_arg_m_gatling_02_mk1",
+                "turret_arg_m_plasma_01_mk1",
+                "turret_arg_m_plasma_02_mk1",
+                "turret_kha_m_beam_01_mk1",
+                "turret_par_m_gatling_01_mk1",
+                "turret_par_m_gatling_02_mk1",
+                "turret_par_m_plasma_01_mk1",
+                "turret_par_m_plasma_02_mk1",
+                "turret_tel_m_gatling_01_mk1",
+                "turret_tel_m_gatling_02_mk1",
+                "turret_tel_m_plasma_01_mk1",
+                "turret_tel_m_plasma_02_mk1",
+                "turret_arg_m_laser_01_mk1",
+                "turret_arg_m_laser_02_mk1",
+                "turret_arg_m_shotgun_01_mk1",
+                "turret_arg_m_shotgun_02_mk1",
+                "turret_par_m_laser_01_mk1",
+                "turret_par_m_laser_02_mk1",
+                "turret_par_m_shotgun_01_mk1",
+                "turret_par_m_shotgun_02_mk1",
+                "turret_tel_m_laser_01_mk1",
+                "turret_tel_m_laser_02_mk1",
+                "turret_tel_m_shotgun_01_mk1",
+                "turret_tel_m_shotgun_02_mk1",
+                "turret_xen_m_laser_02_mk1",
+                "turret_xen_m_laser_01_mk1",
+                "turret_xen_m_laser_02_mk1",
+                ]
+
+impact = [
+        "impact_arg_m_ion_01_mk1",
+        "impact_arg_m_ion_01_mk1",
+        "impact_arg_s_ion_01_mk1",
+        "impact_arg_s_ion_01_mk1",
+        "impact_gen_l_laser_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_s_beam_01_mk1",
+        "impact_gen_s_beam_01_mk1",
+        "impact_gen_s_gatling_01_mk1",
+        "impact_gen_s_gatling_01_mk1",
+        "impact_gen_s_laser_01_mk1",
+        "impact_gen_s_laser_01_mk1",
+        "impact_gen_s_plasma_01_mk1",
+        "impact_gen_s_plasma_01_mk1",
+        "impact_gen_s_shotgun_01_mk1",
+        "impact_gen_s_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_s_gatling_01_mk1",
+        "impact_gen_s_laser_01_mk1",
+        "impact_gen_s_plasma_01_mk1",
+        "impact_gen_s_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_s_beam_01_mk1",
+        "impact_par_m_railgun_01_mk1",
+        "impact_par_m_railgun_01_mk1",
+        "impact_par_s_railgun_01_mk1",
+        "impact_par_s_railgun_01_mk1",
+        "impact_gen_spacesuit_laser_01_mk1",
+        "impact_spacesuit_repair_01_mk1",
+        "impact_tel_m_charge_01_mk1",
+        "impact_tel_m_charge_01_mk1",
+        "impact_tel_s_charge_01_mk1",
+        "impact_tel_s_charge_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_s_laser_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_s_laser_01_mk1",
+        ]
+launch = [ 
+        "muzzle_arg_m_ion_01_mk1",
+        "muzzle_arg_m_ion_01_mk1",
+        "muzzle_arg_s_ion_01_mk1",
+        "muzzle_arg_s_ion_01_mk1",
+        "muzzle_gen_l_laser_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_s_beam_01_mk1",
+        "muzzle_gen_s_beam_01_mk1",
+        "muzzle_gen_s_gatling_01_mk1",
+        "muzzle_gen_s_gatling_01_mk1",
+        "muzzle_gen_s_laser_01_mk1",
+        "muzzle_gen_s_laser_01_mk1",
+        "muzzle_gen_s_plasma_01_mk1",
+        "muzzle_gen_s_plasma_01_mk1",
+        "muzzle_gen_s_shotgun_01_mk1",
+        "muzzle_gen_s_shotgun_01_mk1",
+        "muzzle_gen_l_beam_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_s_gatling_01_mk1",
+        "muzzle_gen_s_laser_01_mk1",
+        "muzzle_gen_s_plasma_01_mk1",
+        "muzzle_gen_s_shotgun_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_s_beam_01_mk1",
+        "muzzle_par_m_railgun_01_mk1",
+        "muzzle_par_m_railgun_01_mk1",
+        "muzzle_par_s_railgun_01_mk1",
+        "muzzle_par_s_railgun_01_mk1",
+        "muzzle_gen_spacesuit_laser_01_mk1",
+        "muzzle_gen_s_repair_01_mk1",
+        "muzzle_tel_m_charge_01_mk1",
+        "muzzle_tel_m_charge_01_mk1",
+        "muzzle_tel_s_charge_01_mk1",
+        "muzzle_tel_s_charge_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_s_laser_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_s_laser_01_mk1",
+        "wpn_flare_launcher",
+        ]
+
+[l_turret]
+
+name_pool = ["pasta","sauce"]
+macroname = ["pasta","sauce"]
+group = "turrets"
+tags ="equipment turret"
+minprice = [400000, 700000]
+avgprice = [700000, 900000]
+maxprice = [900000, 1200000]
+prodamt1 = [10, 100]
+prodamt2 = [10, 100]
+prodamt3 = [10, 100]
+license = ["generaluseequipment,militaryequipment"]
+class = "turret"
+rotationspeed = [5, 60]
+rotationacceleration = [1, 15]
+hullmax = [1000, 15000]
+scale = [1,0]
+speed = [800, 3000]
+reload = [10, 50]
+dmin = [2000, 3000]
+dmax = [3000, 5000]
+dval = [5000, 8000]
+lifetime = [5, 15]
+bcomponent_laser = [ 
+                   
+                    "bullet_gen_m_beam_01_mk2",
+                    "bullet_gen_m_beam_01_mk1",      
+                    "bullet_kha_m_beam_01",
+           
+                    ]
+bcomponent_proj = [ 
+                    "bullet_arg_m_ion_01_mk1",
+                    "bullet_arg_m_ion_01_mk2",
+                    "bullet_gen_m_gatling_01_mk1",
+                    "bullet_gen_m_gatling_01_mk2",
+                    "bullet_gen_m_laser_01_mk1",
+                    "bullet_gen_m_laser_01_mk2",
+                    "bullet_gen_m_plasma_01_mk1",
+                    "bullet_gen_m_plasma_01_mk2",
+                    "bullet_gen_m_shotgun_01_mk1",
+                    "bullet_gen_m_shotgun_01_mk2",
+                    "bullet_gen_m_gatling_01_mk1",
+                    "bullet_gen_m_laser_01_mk1",
+                    "bullet_gen_m_plasma_01_mk1",
+                    "bullet_gen_m_shotgun_01_mk1",
+                    "bullet_par_m_railgun_01_mk1",
+                    "bullet_par_m_railgun_01_mk2",
+                    "bullet_tel_m_charge_01_mk1",
+                    "bullet_tel_m_charge_01_mk2",
+                    "bullet_xen_m_laser_01_mk1",
+                    "bullet_xen_m_laser_01_mk1",
+                    ]
+wcomponents = [
+                "turret_arg_l_beam_01_mk1",
+                "turret_par_l_beam_01_mk1",
+                "turret_tel_l_beam_01_mk1",
+                "turret_arg_l_plasma_01_mk1",
+                "turret_par_l_plasma_01_mk1",
+                "turret_tel_l_plasma_01_mk1",
+                "turret_arg_l_laser_01_mk1",
+                "turret_par_l_laser_01_mk1",
+                "turret_tel_l_laser_01_mk1",
+                "turret_xen_l_laser_01_mk1",
+                ]
+
+impact = [
+        "impact_arg_m_ion_01_mk1",
+        "impact_arg_m_ion_01_mk1",      
+        "impact_gen_l_laser_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_gatling_01_mk1",
+        "impact_gen_m_laser_01_mk1",
+        "impact_gen_m_plasma_01_mk1",
+        "impact_gen_m_shotgun_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_gen_m_beam_01_mk1",
+        "impact_par_m_railgun_01_mk1",
+        "impact_par_m_railgun_01_mk1",
+        "impact_tel_m_charge_01_mk1",
+        "impact_tel_m_charge_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+        "impact_xen_m_laser_01_mk1",
+      
+        ]
+launch = [ 
+        "muzzle_arg_m_ion_01_mk1",
+        "muzzle_arg_m_ion_01_mk1",
+        "muzzle_gen_l_laser_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_l_beam_01_mk1",
+        "muzzle_gen_m_gatling_01_mk1",
+        "muzzle_gen_m_laser_01_mk1",
+        "muzzle_gen_m_plasma_01_mk1",
+        "muzzle_gen_m_shotgun_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_gen_m_beam_01_mk1",
+        "muzzle_par_m_railgun_01_mk1",
+        "muzzle_par_m_railgun_01_mk1",
+        "muzzle_tel_m_charge_01_mk1",
+        "muzzle_tel_m_charge_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        "muzzle_xen_m_laser_01_mk1",
+        ]
