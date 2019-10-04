@@ -1,11 +1,118 @@
 # YOU MUST HAVE AND ABUNDANCE OF NAMES RELATIVE TO WEAPONCOUNT/ WEAPONTYPES OR YOU WILL GET INDEX OUT OF BOUNDS
 
+# Particle
+# Cannon
+# Impulse
+# Ray
+# Emitter
+# Mass
+# Driver
+# Particle
+# Accelerator
+# Cannon
+# Plasma
+# Gun
+# Electro
+# Magnetic
+# Particle
+# Cannon
+# Energy
+# Bolt
+# Chaingun
+# Frag
+# Bomb
+# Launcher
+# High
+# Energy
+# Plasma
+# Thrower
+# Ion
+# Disruptor
+# Phased
+# Repeater
+# Gun
+# Plasma
+# Burst
+# Generator
+# Pulsed
+# Beam
+# Emitter
+# Concussion
+# Impulse
+# Generator
+# Gamma
+# Ray
+# Ion
+# Pulse
+# Generator
+# Ion
+# Shard
+# Railgun
+# Matter
+# Antimatter
+# Launcher
+# Phased
+# Shockwave
+# Generator
+# Cluster
+# Flak
+# Array
+# Flak
+# Artillery
+# Array
+# Fusion
+# Beam
+# Cannon
+# Gauss
+# Cannon
+# Incendiary
+# Bomb
+# Launcher
+# Ion
+# Cannon
+# Phased
+# Array
+# Laser
+# Cannon
+# Photon
+# Artillery
+# Array
+# Photon
+# Pulse
+# Cannon
+# Point
+# Singularity
+# Projector
+# Starburst
+# Shockwave
+# Cannon
+# Tri
+# Beam
+
+#
+#
+#
+#
+# 
+# Quad
+# Blaster
+# Hellhound
+# Fixed
+# Turreted
+# Plaron
+# Triphammers
+# Graviton
+
+# Radar
+# Heavy
+# Hail
+# Thunderhead
 
 [config]
 out_path = "C:/Users/alby/Desktop/tpwar_targets/tpwar_ship_target/"
 mod_name = "extensions\\mysupersickmopd\\macros\\"
 pageid = "344525253"
-weaponcount = 2
+weaponcount = 400
 weapontypes = [  
                 "sgun",
                 "mgun",
@@ -93,7 +200,106 @@ owner = [
         ]
 
 [s_weapon]
-name_pool = ["pasta","sauce"]
+name_pool = ["Plaron Burst Driver",
+"Hail Burst Array",
+"Magnetic Mass Synchrotron",    
+"Advanced Pulse Blaster",       
+"Gamma Wave Generator",
+"Beta Beam Driver",
+"Energy Electron Accelerator",  
+"Magnetic Proton Railgun",      
+"Energy Mass Accelerator",      
+"Fusion Beam Accelerator",      
+"Energy Electron Railgun",      
+"Fixed Artillery Ejector",      
+"Gauss Singularity Railgun",    
+"Magnetic Singularity Emitter", 
+"Concussion Singularity Laser", 
+"Electro Singularity Driver",   
+"High Singularity Launcher",    
+"Thunderhead Neutron Laser",    
+"Particle Singularity Repeater",
+"Beta Bomb Driver",
+"Plasma Proton Ray",
+"Magnetic Pulse Generator",     
+"Tri Electron Caster",
+"Particle Burst Cluster",       
+"Fragmentation Burst Driver",   
+"Gauss Proton Ray",
+"Impulse Neutron Thrower",      
+"High Mass Caster",
+"Fusion Pulse Blaster",
+"Impulse Wave Synchrotron",     
+"Thunderhead Mass Chaingun",    
+"Alpha Wave Cluster",
+"Plasma Neutron Launcher",      
+"Energy Mass Ejector",
+"Energy Neutron Chaingun",      
+"Plasma Bomb Gun",
+"Particle Neutron Synchrotron", 
+"Magnetic Mass Projector",      
+"Fragmentation Mass Array",     
+"Tri Proton Accelerator",
+"Starburst Neutron Repeater",
+"Particle Proton Railgun",
+"Thunderhead Artillery Generator",
+"Concussion Bomb Accelerator",
+"Electro Wave Railgun",
+"Concussion Singularity Cyclotron",
+"Particle Beam Driver",
+"Alpha Mass Blaster",
+"Thunderhead Pulse Launcher",
+"Impulse Burst Array",
+"Fixed Electron Blaster",
+"Phased Beam Thrower",
+"Tri Artillery Cyclotron",
+"Flak Beam Generator",
+"Fixed Neutron Thrower",
+"Thunderhead Proton Array",
+"Particle Wave Disruptor",
+"Photon Mass Chaingun",
+"Flak Beam Chaingun",
+"Magnetic Proton Blaster",
+"Starburst Burst Laser",
+"Triphammers Neutron Repeater",
+"Hellhound Beam Repeater",
+"Concentrated Bomb Blaster",
+"Tri Proton Ray",
+"Incendiary Electron Projector",
+"Alpha Beam Cluster",
+"Energy Singularity Disruptor",
+"Hail Singularity Array",
+"Energy Pulse Array",
+"Plasma Neutron Laser",
+"Energy Singularity Ejector",
+"Impulse Beam Railgun",
+"Concussion Burst Chaingun",
+"Heavy Proton Accelerator",
+"Tri Mass Synchrotron",
+"Fusion Singularity Ejector",
+"Charged Beam Launcher",
+"Electro Pulse Caster",
+"Particle Bomb Launcher",
+"Plaron Singularity Projector",
+"Heavy Mass Ray",
+"Thunderhead Singularity Ejector",
+"Energy Singularity Ray",
+"Quad Proton Ray",
+"Gauss Neutron Repeater",
+"Hail Pulse Emitter",
+"High Artillery Cannon",
+"Triphammers Beam Thrower",
+"Photon Beam Driver",
+"Gauss Wave Ejector",
+"Concussion Pulse Emitter",
+"Thunderhead Singularity Gun",
+"Tri Burst Disruptor",
+"Gauss Beam Blaster",
+"Fusion Proton Railgun",
+"Hail Proton Blaster",
+"Magnetic Wave Accelerator",
+"Fixed Neutron Projector",
+"Energy Electron Thrower",]
 macroname = ["pasta","sauce"]
 group = "weapons"
 tags ="equipment weapon"
@@ -103,7 +309,7 @@ maxprice = [900000, 1200000]
 prodamt1 = [10, 100]
 prodamt2 = [10, 100]
 prodamt3 = [10, 100]
-license = ["generaluseequipment,militaryequipment"]
+license = ["generaluseequipment","militaryequipment"]
 class = "weapon"
 rotationspeed = [5, 60]
 rotationacceleration = [1, 15]
@@ -273,7 +479,106 @@ launch = [
         ]
 
 [m_weapon]
-name_pool = ["pasta","sauce"]
+name_pool = ["Fixed Mass Repeater",
+"Thunderhead Electron Thrower",
+"Triphammers Artillery Gun",
+"Concentrated Beam Gun",
+"Photon Neutron Repeater",
+"Charged Mass Emitter",
+"Gamma Burst Launcher",
+"Phased Bomb Caster",
+"Magnetic Pulse Disruptor",
+"Starburst Proton Ejector",
+"Phased Pulse Generator",
+"Tri Proton Generator",
+"Plaron Bomb Cyclotron",
+"Concussion Beam Ejector",
+"Concussion Singularity Launcher",
+"Impulse Neutron Cluster",
+"Electro Neutron Emitter",
+"Fixed Wave Emitter",
+"Energy Bomb Projector",
+"Plasma Mass Array",
+"Triphammers Singularity Generator",
+"Concussion Beam Railgun",
+"Point Mass Gun",
+"Impulse Bomb Caster",
+"Hellhound Wave Laser",
+"Alpha Neutron Laser",
+"Photon Bomb Cyclotron",
+"Electro Neutron Cyclotron",
+"Hellhound Electron Emitter",
+"Gauss Bomb Thrower",
+"Point Electron Generator",
+"Quad Burst Ray",
+"Particle Mass Cannon",
+"Electro Pulse Laser",
+"Particle Neutron Generator",
+"Starburst Singularity Laser",
+"High Beam Projector",
+"Plasma Burst Ray",
+"Plasma Beam Ejector",
+"Quad Burst Synchrotron",
+"Incendiary Artillery Generator",
+"Flak Burst Cyclotron",
+"Concussion Mass Ray",
+"Photon Wave Thrower",
+"Fusion Artillery Accelerator",
+"Fusion Mass Cannon",
+"Particle Burst Disruptor",
+"Gauss Artillery Synchrotron",
+"Phased Artillery Chaingun",
+"Gauss Mass Ray",
+"Magnetic Burst Cluster",
+"Electro Beam Cyclotron",
+"Particle Singularity Projector",
+"Beta Beam Array",
+"Fusion Mass Cyclotron",
+"Gamma Electron Thrower",
+"Beta Singularity Ejector",
+"Flak Burst Launcher",
+"Particle Bomb Cluster",
+"Particle Proton Driver",
+"Gamma Electron Accelerator",
+"Particle Pulse Blaster",
+"Photon Electron Generator",
+"Fusion Burst Synchrotron",
+"Incendiary Wave Ejector",
+"Plasma Proton Ejector",
+"Incendiary Proton Generator",
+"Gauss Electron Caster",
+"Particle Wave Synchrotron",
+"Particle Beam Chaingun",
+"Point Burst Repeater",
+"Hail Artillery Emitter",
+"Tri Proton Ejector",
+"Alpha Singularity Cyclotron",
+"Starburst Wave Projector",
+"Plaron Burst Array",
+"Charged Neutron Blaster",
+"Flak Singularity Projector",
+"Fragmentation Singularity Gun",
+"Phased Burst Ray",
+"Particle Proton Caster",
+"Hellhound Beam Ejector",
+"Particle Beam Thrower",
+"Starburst Singularity Synchrotron",
+"Fixed Beam Ray",
+"Thunderhead Neutron Generator",
+"Hail Neutron Railgun",
+"Concentrated Bomb Caster",
+"Incendiary Burst Emitter",
+"Impulse Mass Driver",
+"Charged Mass Disruptor",
+"Fusion Artillery Disruptor",
+"Incendiary Proton Blaster",
+"Plaron Bomb Emitter",
+"Quad Mass Railgun",
+"Hail Burst Generator",
+"Gamma Pulse Ejector",
+"Beta Neutron Laser",
+"Energy Beam Cyclotron",
+"Plaron Electron Cyclotron",]
 macroname = ["pasta","sauce"]
 group = "weapons"
 tags ="equipment weapon"
@@ -283,7 +588,7 @@ maxprice = [900000, 1200000]
 prodamt1 = [10, 100]
 prodamt2 = [10, 100]
 prodamt3 = [10, 100]
-license = ["generaluseequipment,militaryequipment"]
+license = ["generaluseequipment","militaryequipment"]
 class = "weapon"
 rotationspeed = [5, 60]
 rotationacceleration = [1, 15]
@@ -456,7 +761,106 @@ launch = [
         ]
 
 [l_weapon]
-name_pool = ["pasta","sauce"]
+name_pool = ["Particle Burst Ray",
+"Plasma Neutron Synchrotron",
+"Electro Burst Ray",
+"Fusion Proton Accelerator",
+"Incendiary Beam Synchrotron",
+"Gauss Neutron Array",
+"Hellhound Singularity Cannon",
+"Magnetic Neutron Driver",
+"Impulse Burst Launcher",
+"Hellhound Proton Array",
+"Particle Proton Railgun",
+"Impulse Bomb Generator",
+"Hail Burst Array",
+"Particle Beam Cluster",
+"Advanced Burst Railgun",
+"Charged Pulse Gun",
+"Advanced Bomb Emitter",
+"Quad Artillery Laser",
+"Plasma Beam Cyclotron",
+"Fusion Beam Accelerator",
+"Beta Electron Chaingun",
+"Energy Bomb Synchrotron",
+"Hellhound Beam Generator",
+"Plasma Electron Accelerator",
+"Photon Beam Repeater",
+"Gamma Proton Driver",
+"Flak Electron Generator",
+"Hail Bomb Railgun",
+"Hail Artillery Cannon",
+"Fragmentation Electron Projector",
+"Plaron Artillery Driver",
+"Hellhound Bomb Synchrotron",
+"Phased Wave Array",
+"Starburst Singularity Emitter",
+"Impulse Bomb Ray",
+"Particle Artillery Launcher",
+"Concussion Pulse Disruptor",
+"Hellhound Wave Cluster",
+"Impulse Bomb Laser",
+"Incendiary Wave Emitter",
+"Concussion Electron Ejector",
+"Energy Electron Repeater",
+"Impulse Singularity Thrower",
+"Charged Electron Array",
+"Gauss Bomb Caster",
+"Hail Proton Cannon",
+"Quad Bomb Gun",
+"Beta Singularity Repeater",
+"Gamma Artillery Projector",
+"Impulse Proton Cluster",
+"Incendiary Electron Disruptor",
+"Thunderhead Wave Railgun",
+"Fragmentation Artillery Driver",
+"Gamma Proton Chaingun",
+"Gauss Pulse Caster",
+"Fusion Beam Array",
+"Phased Neutron Laser",
+"Particle Burst Chaingun",
+"Impulse Beam Laser",
+"Phased Electron Launcher",
+"Particle Neutron Launcher",
+"Fixed Mass Ray",
+"Tri Artillery Accelerator",
+"Particle Bomb Synchrotron",
+"Incendiary Wave Chaingun",
+"High Artillery Synchrotron",
+"Hellhound Wave Accelerator",
+"Incendiary Artillery Accelerator",
+"Thunderhead Beam Laser",
+"Hail Proton Chaingun",
+"Fragmentation Bomb Repeater",
+"Phased Beam Disruptor",
+"Quad Electron Thrower",
+"Magnetic Mass Array",
+"Triphammers Wave Cannon",
+"Magnetic Electron Ray",
+"Electro Electron Disruptor",
+"Concentrated Pulse Railgun",
+"Tri Pulse Ejector",
+"Electro Singularity Railgun",
+"Plasma Bomb Gun",
+"Plasma Burst Disruptor",
+"Fixed Mass Projector",
+"Heavy Artillery Emitter",
+"Starburst Burst Chaingun",
+"Beta Mass Generator",
+"Gamma Burst Generator",
+"Hail Pulse Projector",
+"Fusion Artillery Cyclotron",
+"Beta Bomb Caster",
+"Tri Beam Blaster",
+"High Neutron Cannon",
+"High Neutron Railgun",
+"Concentrated Artillery Chaingun",
+"Fragmentation Pulse Synchrotron",
+"Plasma Singularity Repeater",
+"Impulse Wave Accelerator",
+"Phased Wave Ejector",
+"Particle Wave Gun",
+"Particle Artillery Launcher",]
 macroname = ["pasta","sauce"]
 group = "weapons"
 tags ="equipment weapon"
@@ -466,7 +870,7 @@ maxprice = [900000, 1200000]
 prodamt1 = [10, 100]
 prodamt2 = [10, 100]
 prodamt3 = [10, 100]
-license = ["generaluseequipment,militaryequipment"]
+license = ["generaluseequipment","militaryequipment"]
 class = "weapon"
 rotationspeed = [5, 60]
 rotationacceleration = [1, 15]
@@ -627,7 +1031,106 @@ launch = [
 
 [m_turret]
 
-name_pool = ["pasta","sauce"]
+name_pool = ["Fixed Beam Disruptor",
+"Beta Proton Laser",
+"High Burst Accelerator",
+"Point Mass Railgun",
+"Particle Proton Laser",
+"Incendiary Singularity Emitter",
+"Point Singularity Blaster",
+"Electro Neutron Synchrotron",
+"Particle Bomb Cannon",
+"Electro Pulse Gun",
+"Heavy Pulse Synchrotron",
+"Electro Beam Generator",
+"Advanced Wave Thrower",
+"Plasma Bomb Synchrotron",
+"Impulse Singularity Gun",
+"High Wave Chaingun",
+"Point Singularity Disruptor",
+"Advanced Pulse Launcher",
+"Plasma Electron Emitter",
+"Tri Proton Driver",
+"Fusion Beam Emitter",
+"Plasma Pulse Synchrotron",
+"Photon Neutron Disruptor",
+"Electro Bomb Accelerator",
+"Incendiary Artillery Projector",
+"Plasma Proton Chaingun",
+"Particle Singularity Gun",
+"Gauss Pulse Launcher",
+"Fusion Neutron Chaingun",
+"Impulse Singularity Ray",
+"Flak Bomb Array",
+"Plasma Burst Projector",
+"Plasma Singularity Projector",
+"Quad Singularity Chaingun",
+"Plasma Burst Chaingun",
+"Gamma Electron Launcher",
+"Particle Mass Ray",
+"Heavy Artillery Projector",
+"Alpha Pulse Generator",
+"Plasma Beam Cluster",
+"Point Proton Ejector",
+"Hellhound Beam Cluster",
+"Concussion Bomb Array",
+"Magnetic Beam Repeater",
+"Electro Singularity Array",
+"Charged Neutron Caster",
+"Plasma Neutron Gun",
+"Charged Proton Caster",
+"Concussion Burst Generator",
+"Photon Artillery Generator",
+"Charged Mass Thrower",
+"Hail Bomb Ejector",
+"Particle Electron Driver",
+"Incendiary Singularity Gun",
+"Beta Mass Synchrotron",
+"Impulse Wave Gun",
+"Electro Bomb Railgun",
+"Charged Mass Launcher",
+"Triphammers Mass Array",
+"Plaron Wave Array",
+"Particle Mass Disruptor",
+"Thunderhead Singularity Launcher",
+"Flak Electron Array",
+"Alpha Pulse Caster",
+"Plasma Burst Chaingun",
+"Particle Pulse Ejector",
+"Advanced Burst Ejector",
+"Concentrated Wave Projector",
+"Point Bomb Projector",
+"Plaron Electron Synchrotron",
+"Starburst Mass Laser",
+"Fixed Bomb Cluster",
+"Energy Electron Synchrotron",
+"Triphammers Bomb Cluster",
+"Hail Electron Array",
+"Phased Electron Cannon",
+"Fusion Burst Railgun",
+"Flak Wave Synchrotron",
+"Photon Bomb Gun",
+"Phased Wave Laser",
+"Hellhound Proton Launcher",
+"Plasma Mass Caster",
+"Impulse Mass Emitter",
+"Fusion Proton Accelerator",
+"Concussion Beam Repeater",
+"Alpha Pulse Cluster",
+"Point Mass Chaingun",
+"Hail Bomb Railgun",
+"Incendiary Electron Thrower",
+"Starburst Beam Ejector",
+"Plaron Pulse Railgun",
+"Photon Burst Launcher",
+"Hellhound Burst Chaingun",
+"Plasma Mass Repeater",
+"Impulse Pulse Projector",
+"Gauss Artillery Projector",
+"Fusion Singularity Cannon",
+"Fusion Pulse Ejector",
+"Concentrated Electron Array",
+"Concussion Electron Chaingun",]
 macroname = ["pasta","sauce"]
 group = "turrets"
 tags ="equipment turret"
@@ -637,7 +1140,7 @@ maxprice = [900000, 1200000]
 prodamt1 = [10, 100]
 prodamt2 = [10, 100]
 prodamt3 = [10, 100]
-license = ["generaluseequipment,militaryequipment"]
+license = ["generaluseequipment","militaryequipment"]
 class = "turret"
 rotationspeed = [5, 60]
 rotationacceleration = [1, 15]
@@ -849,7 +1352,106 @@ launch = [
 
 [l_turret]
 
-name_pool = ["pasta","sauce"]
+name_pool = ["Energy Artillery Disruptor",
+"Thunderhead Wave Ray",
+"Gamma Burst Repeater",
+"Fragmentation Singularity Chaingun",
+"Incendiary Proton Cluster",
+"Heavy Mass Blaster",
+"Point Electron Generator",
+"Beta Burst Laser",
+"Charged Electron Repeater",
+"Point Burst Cannon",
+"Impulse Beam Ray",
+"Thunderhead Wave Projector",
+"Fusion Mass Generator",
+"Gauss Electron Emitter",
+"Particle Proton Cyclotron",
+"Plaron Artillery Array",
+"Magnetic Bomb Ray",
+"Hellhound Mass Driver",
+"Starburst Artillery Disruptor",
+"Beta Neutron Thrower",
+"Fusion Wave Repeater",
+"High Artillery Thrower",
+"Fixed Proton Accelerator",
+"Flak Neutron Gun",
+"Hail Singularity Driver",
+"Magnetic Wave Chaingun",
+"Beta Wave Caster",
+"Charged Neutron Ejector",
+"Charged Beam Ejector",
+"Fusion Burst Laser",
+"Incendiary Mass Generator",
+"Hellhound Beam Generator",
+"Thunderhead Beam Disruptor",
+"Gamma Electron Cannon",
+"Impulse Mass Caster",
+"Fusion Mass Projector",
+"Triphammers Artillery Launcher",
+"Tri Bomb Projector",
+"Particle Wave Projector",
+"Plasma Pulse Repeater",
+"Gamma Bomb Gun",
+"Hellhound Electron Gun",
+"Alpha Artillery Emitter",
+"Concussion Burst Gun",
+"Fusion Artillery Driver",
+"Fusion Artillery Disruptor",
+"Concussion Burst Cannon",
+"High Burst Repeater",
+"High Singularity Thrower",
+"Hail Bomb Projector",
+"Quad Singularity Caster",
+"Plaron Beam Projector",
+"Gauss Proton Driver",
+"Heavy Neutron Thrower",
+"Energy Wave Synchrotron",
+"Flak Singularity Synchrotron",
+"Particle Electron Ejector",
+"Tri Artillery Cyclotron",
+"Gauss Wave Railgun",
+"Incendiary Proton Laser",
+"Impulse Neutron Caster",
+"Tri Wave Gun",
+"Phased Singularity Caster",
+"Fixed Pulse Emitter",
+"Electro Artillery Launcher",
+"Beta Singularity Cyclotron",
+"Tri Mass Repeater",
+"Beta Bomb Cyclotron",
+"Advanced Electron Ray",
+"Particle Burst Generator",
+"Tri Singularity Cyclotron",
+"Concentrated Bomb Generator",
+"Electro Pulse Disruptor",
+"Particle Artillery Blaster",
+"Plasma Beam Cannon",
+"Thunderhead Neutron Synchrotron",
+"Particle Electron Blaster",
+"Concentrated Neutron Repeater",
+"Charged Burst Caster",
+"Concentrated Electron Projector",
+"Point Singularity Array",
+"Electro Neutron Emitter",
+"Incendiary Burst Gun",
+"Gamma Wave Driver",
+"Photon Proton Blaster",
+"Hail Singularity Emitter",
+"Triphammers Proton Railgun",
+"Tri Neutron Cluster",
+"Phased Burst Ejector",
+"Particle Neutron Driver",
+"Beta Bomb Array",
+"Flak Bomb Repeater",
+"Impulse Beam Ejector",
+"Magnetic Pulse Gun",
+"Fusion Artillery Accelerator",
+"Incendiary Electron Cyclotron",
+"Gamma Neutron Array",
+"Thunderhead Electron Accelerator",
+"Magnetic Mass Driver",
+"Particle Electron Synchrotron",]
 macroname = ["pasta","sauce"]
 group = "turrets"
 tags ="equipment turret"
@@ -859,7 +1461,7 @@ maxprice = [900000, 1200000]
 prodamt1 = [10, 100]
 prodamt2 = [10, 100]
 prodamt3 = [10, 100]
-license = ["generaluseequipment,militaryequipment"]
+license = ["generaluseequipment","militaryequipment"]
 class = "turret"
 rotationspeed = [5, 60]
 rotationacceleration = [1, 15]

@@ -242,35 +242,35 @@ fn main() {
         let selected = select.choose(&mut rand::thread_rng()).expect("weapontype select failed");
         if selected == &"sgun".to_string() {
             let macroname = toml_parsed.s_weapon.name_pool.choose(&mut rand::thread_rng()).expect("name remove").to_string();
-            current = current_sgun(&toml_parsed, tcount, &macroname);
+            current = current_sgun(&toml_parsed, tcount, &macroname.replace(" ", "_"));
             let index = toml_parsed.s_weapon.name_pool.iter().position(|x| *x == macroname).unwrap();
             toml_parsed.s_weapon.name_pool.remove(index);
             println!("sgun");
         }
         if selected == &"mgun".to_string() {
             let macroname = toml_parsed.m_weapon.name_pool.choose(&mut rand::thread_rng()).expect("name remove").to_string();
-            current = current_mgun(&toml_parsed, tcount, &macroname);
+            current = current_mgun(&toml_parsed, tcount, &macroname.replace(" ", "_"));
             let index = toml_parsed.m_weapon.name_pool.iter().position(|x| *x == macroname).unwrap();
             toml_parsed.m_weapon.name_pool.remove(index);
             println!("mgun");
         }
         if selected == &"lgun".to_string() {
             let macroname = toml_parsed.l_weapon.name_pool.choose(&mut rand::thread_rng()).expect("name remove").to_string();
-            current = current_lgun(&toml_parsed, tcount, &macroname);
+            current = current_lgun(&toml_parsed, tcount, &macroname.replace(" ", "_"));
             let index = toml_parsed.l_weapon.name_pool.iter().position(|x| *x == macroname).unwrap();
             toml_parsed.l_weapon.name_pool.remove(index);
             println!("lgun");
         }
         if selected == &"mturret".to_string() {
             let macroname = toml_parsed.m_turret.name_pool.choose(&mut rand::thread_rng()).expect("name remove").to_string();
-            current = current_mturret(&toml_parsed, tcount, &macroname);
+            current = current_mturret(&toml_parsed, tcount, &macroname.replace(" ", "_"));
             let index = toml_parsed.m_turret.name_pool.iter().position(|x| *x == macroname).unwrap();
             toml_parsed.m_turret.name_pool.remove(index);
             println!("mturret");
         }
         if selected == &"lturret".to_string() {
             let macroname = toml_parsed.l_turret.name_pool.choose(&mut rand::thread_rng()).expect("name remove").to_string();
-            current = current_lturret(&toml_parsed, tcount, &macroname);
+            current = current_lturret(&toml_parsed, tcount, &macroname.replace(" ", "_"));
             let index = toml_parsed.l_turret.name_pool.iter().position(|x| *x == macroname).unwrap();
             toml_parsed.l_turret.name_pool.remove(index);
             println!("lturret");
@@ -299,7 +299,7 @@ fn main() {
     ware_string.push_str("\n</add>\n</diff>\n");
     output(&mut macro_out_path, "bullets.xml".to_string(), &bullet_string);
     output(&mut macro_out_path, "macros.xml".to_string(), &macro_string);
-    output(&mut index_out_path, "index.xml".to_string(), &index_string);
+    output(&mut index_out_path, "macros.xml".to_string(), &index_string);
     output(&mut t_out_path, "0001-L044.xml".to_string(), &t_string);
     output(&mut ware_out_path, "wares.xml".to_string(), &ware_string);
 }
@@ -764,7 +764,7 @@ fn gen_ware(current: &Current, ware_string: &mut String, toml_parsed: &Toml) {
         <use threshold=\"0\"  />
         <owner faction=\"{}\" />
       </ware>",
-        &current.name,
+        &current.name.to_lowercase(),
         toml_parsed.config.pageid,
         &current.count + 1,
         toml_parsed.config.pageid,
@@ -780,27 +780,27 @@ fn gen_ware(current: &Current, ware_string: &mut String, toml_parsed: &Toml) {
         &current.prodamt2,
         &current.prod3,
         &current.prodamt3,
-        &current.name,
+        &current.name.to_lowercase(),
         &current.license,
         &current.owner,
     ));
 }
 fn gen_tstring(t_string: &mut String, current: &Current) {
-    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>\"", current.count + 1, current.name));
-    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>\"", current.count + 2, current.name));
-    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>\"", current.count + 3, current.name));
-    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>\"", current.count + 4, current.name));
-    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>\"", current.count + 5, current.name));
+    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 1, current.name));
+    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 2, current.name));
+    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 3, current.name));
+    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 4, current.name));
+    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 5, current.name));
 }
 
 fn gen_index(current: &Current, index_string: &mut String, toml_parsed: &Toml) {
     index_string.push_str(&format!(
-        "\n<entry name=\"{}_macro\" value=\"{}bullets\" />",
-        current.name, toml_parsed.config.mod_name
+        "\n<entry name=\"{}_macro\" value=\"{}macros\" />",
+        current.name.to_lowercase(), toml_parsed.config.mod_name
     ));
     index_string.push_str(&format!(
-        "\n<entry name=\"{}_bullet_macro\" value=\"{}macros\" />",
-        current.name, toml_parsed.config.mod_name
+        "\n<entry name=\"{}_bullet_macro\" value=\"{}bullets\" />",
+        current.name.to_lowercase(), toml_parsed.config.mod_name
     ));
 }
 fn output(path: &mut String, name: String, input: &str) {
@@ -810,7 +810,7 @@ fn output(path: &mut String, name: String, input: &str) {
 fn gen_macro(toml_parsed: &Toml, current: &Current, macro_string: &mut String) {
     macro_string.push_str(&format!(
         "  \n<macro name=\"{}_macro\" class=\"{}\">
-    <component ref=\"{}_comp\" />
+    <component ref=\"{}\" />
     <properties>
       <identification name=\"{{{},{}}}\" description=\"{{{},{}}}\" mk=\"1\" />
       <bullet class=\"{}_bullet_macro\" />
@@ -820,14 +820,14 @@ fn gen_macro(toml_parsed: &Toml, current: &Current, macro_string: &mut String) {
       <hull max=\"{}\" />
     </properties>
   </macro>",
-        current.name,
+        current.name.to_lowercase(),
         current.class,
         current.wcomponent,
         toml_parsed.config.pageid,
         current.count + 1,
         toml_parsed.config.pageid,
         current.count + 3,
-        current.name,
+        current.name.to_lowercase(),
         current.rotationspeed,
         current.rotationacceleration,
         current.hullmax
@@ -840,7 +840,7 @@ fn gen_bullet(toml_parsed: &Toml, current: &Current, bullet_string: &mut String)
    \n<macro name=\"{}_bullet_macro\" class=\"bullet\">
     <component ref=\"{}\" />
     <properties>
-      <bullet speed=\"{}\" lifetime=\"{}\" amount=\"1\" barrelamount=\"1\" scale=\"{}\" />
+      <bullet speed=\"{}\" lifetime=\"{}\" amount=\"1\" barrelamount=\"1\" icon=\"weapon_railgun_mk2\" timediff=\"0.005\" angle=\"0.05\" maxhits=\"1\" ricochet=\"0\"  attach=\"0\"  scale=\"{}\" />
       <reload time=\"{}\" />
       <damage min=\"{}\" max=\"{}\"  value=\"{}\" time=\"{}\" />
       <effects>
@@ -850,7 +850,7 @@ fn gen_bullet(toml_parsed: &Toml, current: &Current, bullet_string: &mut String)
       <weapon system=\"{}\" />
     </properties>
   </macro>",
-        current.name,
+        current.name.to_lowercase(),
         if current.scale == 1 {
             &current.bcomponent_laser
         } else {
