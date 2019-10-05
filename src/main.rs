@@ -786,11 +786,11 @@ fn gen_ware(current: &Current, ware_string: &mut String, toml_parsed: &Toml) {
     ));
 }
 fn gen_tstring(t_string: &mut String, current: &Current) {
-    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 1, current.name));
-    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 2, current.name));
-    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 3, current.name));
-    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 4, current.name));
-    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 5, current.name));
+    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 1, current.name.replace("_", " ")));
+    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 2, current.name.replace("_", " ")));
+    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 3, current.name.replace("_", " ")));
+    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 4, current.name.replace("_", " ")));
+    t_string.push_str(&format!("\n<t id=\"{}\">{}</t>", current.count + 5, current.name.replace("_", " ")));
 }
 
 fn gen_index(current: &Current, index_string: &mut String, toml_parsed: &Toml) {
